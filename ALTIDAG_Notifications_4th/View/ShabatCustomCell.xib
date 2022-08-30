@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCellShabat" rowHeight="93" id="7Iv-iK-dBO" customClass="ShabatCustomCell" customModule="ALTIDAG_Notifications_2nd">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="center" tableViewCell="7Iv-iK-dBO" id="tRG-ag-eKV">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVA-8C-mpy">
+                        <rect key="frame" x="65" y="15" width="320" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="B8i-dh-LoE"/>
+                            <constraint firstAttribute="height" constant="20" id="oOZ-zN-Pop"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemYellowColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="LxW-BU-qrW">
+                        <rect key="frame" x="0.0" y="50" width="450" height="170"/>
+                        <subviews>
+                            <datePicker opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="60" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzp-M7-7g3">
+                                <rect key="frame" x="0.0" y="4" width="359" height="162"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="timer:" destination="7Iv-iK-dBO" eventType="valueChanged" id="QBG-Cz-1hL"/>
+                                </connections>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="siU-xF-qhk">
+                                <rect key="frame" x="391" y="56.5" width="59" height="57.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEw-F1-Ezz">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" highlighted="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="loO-0a-KTb">
+                                        <rect key="frame" x="0.0" y="26.5" width="61" height="31"/>
+                                        <color key="onTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="onOffSwitch:" destination="7Iv-iK-dBO" eventType="valueChanged" id="AcP-9c-FO7"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEC-2G-DQl">
+                        <rect key="frame" x="470" y="26" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cpC-bx-1rp"/>
+                            <constraint firstAttribute="width" constant="42" id="dDp-90-Dx8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.76772354109999996" blue="0.2739155398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="PEC-2G-DQl" firstAttribute="leading" secondItem="aVA-8C-mpy" secondAttribute="trailing" constant="85" id="8DK-ek-lV6"/>
+                    <constraint firstAttribute="trailing" secondItem="LxW-BU-qrW" secondAttribute="trailing" id="AML-ah-xdR"/>
+                    <constraint firstItem="PEC-2G-DQl" firstAttribute="top" secondItem="tRG-ag-eKV" secondAttribute="top" constant="26" id="Ej9-hz-EaG"/>
+                    <constraint firstItem="LxW-BU-qrW" firstAttribute="top" secondItem="aVA-8C-mpy" secondAttribute="bottom" constant="15" id="MX4-Ta-mT1"/>
+                    <constraint firstItem="aVA-8C-mpy" firstAttribute="centerX" secondItem="tRG-ag-eKV" secondAttribute="centerX" id="Vf5-yd-abQ"/>
+                    <constraint firstItem="aVA-8C-mpy" firstAttribute="top" secondItem="tRG-ag-eKV" secondAttribute="top" constant="15" id="eHT-kh-FLh"/>
+                    <constraint firstItem="LxW-BU-qrW" firstAttribute="leading" secondItem="tRG-ag-eKV" secondAttribute="leading" id="pGv-nX-As3"/>
+                    <constraint firstAttribute="bottom" secondItem="LxW-BU-qrW" secondAttribute="bottom" id="uXe-wM-m9h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="zsM-0u-BGZ"/>
+            <connections>
+                <outlet property="onOffButtonOutlet" destination="loO-0a-KTb" id="N4e-Gf-1dW"/>
+                <outlet property="onOffLabel" destination="eEw-F1-Ezz" id="P3F-Vs-CjA"/>
+                <outlet property="onOffLabelTop" destination="PEC-2G-DQl" id="lYl-vN-OxF"/>
+                <outlet property="setTimeLbl" destination="aVA-8C-mpy" id="IwJ-bB-tI0"/>
+                <outlet property="timerOutlet" destination="Uzp-M7-7g3" id="iwi-UN-koy"/>
+            </connections>
+            <point key="canvasLocation" x="145" y="19"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

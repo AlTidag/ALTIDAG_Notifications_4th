@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCellWeekly" rowHeight="93" id="KGk-i7-Jjw" customClass="WeeklyCustomCell" customModule="ALTIDAG_Notifications_4th">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZD-r8-Zk6">
+                        <rect key="frame" x="65" y="15" width="320" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="G4e-Ni-jmy"/>
+                            <constraint firstAttribute="width" constant="320" id="hPA-De-0A7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemYellowColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="fBK-EL-lMj">
+                        <rect key="frame" x="0.0" y="50" width="450" height="170"/>
+                        <subviews>
+                            <datePicker opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6M-Gc-WEf">
+                                <rect key="frame" x="0.0" y="4" width="359" height="162"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="timer:" destination="KGk-i7-Jjw" eventType="valueChanged" id="GfZ-kg-I6T"/>
+                                </connections>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="DRL-uj-QbG" userLabel="Stack View On Off">
+                                <rect key="frame" x="391" y="56.5" width="59" height="57.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWp-lD-VD5">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" highlighted="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1KQ-Nl-74k">
+                                        <rect key="frame" x="0.0" y="26.5" width="61" height="31"/>
+                                        <color key="onTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="onOffSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Gzk-Uo-RK4"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="fBK-EL-lMj" firstAttribute="top" secondItem="LZD-r8-Zk6" secondAttribute="bottom" constant="15" id="BoQ-jM-OcP"/>
+                    <constraint firstItem="LZD-r8-Zk6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="BuJ-hM-cB7"/>
+                    <constraint firstItem="LZD-r8-Zk6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XEB-O4-8iB"/>
+                    <constraint firstItem="fBK-EL-lMj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dOR-LN-7Ze"/>
+                    <constraint firstAttribute="trailing" secondItem="fBK-EL-lMj" secondAttribute="trailing" id="roJ-gj-QGP"/>
+                    <constraint firstAttribute="bottom" secondItem="fBK-EL-lMj" secondAttribute="bottom" id="yMW-DS-KeL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellView" destination="H2p-sc-9uM" id="IXZ-Za-hhJ"/>
+                <outlet property="onOffButtonOutlet" destination="1KQ-Nl-74k" id="d6f-3E-9sV"/>
+                <outlet property="onOffLabel" destination="UWp-lD-VD5" id="5LW-F5-5Ei"/>
+                <outlet property="setTimeLbl" destination="LZD-r8-Zk6" id="Xrc-9g-Ifd"/>
+                <outlet property="stack" destination="fBK-EL-lMj" id="a3I-Jj-eXT"/>
+                <outlet property="timerOutlet" destination="P6M-Gc-WEf" id="I2v-3m-g1C"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="-23"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

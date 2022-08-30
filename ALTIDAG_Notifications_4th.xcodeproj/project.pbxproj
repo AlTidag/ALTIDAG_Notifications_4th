@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		785893752874CEE8008BE3E5 /* TimeModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785893742874CEE8008BE3E5 /* TimeModelData.swift */; };
+		785893772874CF38008BE3E5 /* PrayerTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785893762874CF38008BE3E5 /* PrayerTime.swift */; };
+		7886507628525F0C0069D776 /* ApiByCoordinatesWeekdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7886507528525F0C0069D776 /* ApiByCoordinatesWeekdays.swift */; };
+		7886508128553CA70069D776 /* WeeklyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7886508028553CA70069D776 /* WeeklyCustomCell.swift */; };
+		78865082285547BB0069D776 /* WeeklyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7886507F28553C250069D776 /* WeeklyCustomCell.xib */; };
+		78865094285669E50069D776 /* FinalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78865093285669E50069D776 /* FinalTableViewController.swift */; };
+		788650D52858D0990069D776 /* ApiByCoordinatesShabat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788650D42858D0990069D776 /* ApiByCoordinatesShabat.swift */; };
+		788DDC7128BD3E2300796631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7028BD3E2300796631 /* AppDelegate.swift */; };
+		788DDC7328BD3E5800796631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7228BD3E5800796631 /* SceneDelegate.swift */; };
+		788DDC7528BD3E7300796631 /* WeeklySearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7428BD3E7300796631 /* WeeklySearchVC.swift */; };
+		788DDC7828BD3E9700796631 /* TimeModelWeekdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7628BD3E9700796631 /* TimeModelWeekdays.swift */; };
+		788DDC7928BD3E9700796631 /* TimesDataWeekDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7728BD3E9700796631 /* TimesDataWeekDays.swift */; };
+		788DDC7B28BD3EB300796631 /* SchedualeUserTimeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7A28BD3EB300796631 /* SchedualeUserTimeTableVC.swift */; };
+		788DDC7D28BD3EC600796631 /* KeysDatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7C28BD3EC600796631 /* KeysDatesModel.swift */; };
+		788DDC8028BD3EE800796631 /* FinalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788DDC7E28BD3EE800796631 /* FinalTableViewCell.xib */; };
+		788DDC8128BD3EE800796631 /* FinalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DDC7F28BD3EE800796631 /* FinalTableViewCell.swift */; };
+		788DDC8328BD3FA600796631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788DDC8228BD3FA600796631 /* Assets.xcassets */; };
+		78A09673284E958E004C1F3C /* LocationSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A09672284E958E004C1F3C /* LocationSearchVC.swift */; };
+		78A09685284FB7C2004C1F3C /* WeekOrShabatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A09684284FB7C2004C1F3C /* WeekOrShabatVC.swift */; };
+		78A09692284FC7B5004C1F3C /* TimesDataShabat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A09691284FC7B5004C1F3C /* TimesDataShabat.swift */; };
+		78A09694284FC7DC004C1F3C /* TimeModelShabat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A09693284FC7DC004C1F3C /* TimeModelShabat.swift */; };
+		78B393F12877624C008719D5 /* CoolCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B393F02877624C008719D5 /* CoolCode.swift */; };
+		78BDEA5828809E9D00460140 /* ShabatCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78BDEA5528809E9D00460140 /* ShabatCustomCell.xib */; };
+		78BDEA5928809E9D00460140 /* ShabatCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDEA5628809E9D00460140 /* ShabatCustomCell.swift */; };
+		78BDEA5A28809E9D00460140 /* ShabatTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDEA5728809E9D00460140 /* ShabatTableVC.swift */; };
+		78D0F08A28BD4A1400F51FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D0F08828BD4A1400F51FA7 /* Main.storyboard */; };
+		78D0F08B28BD4A1400F51FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D0F08928BD4A1400F51FA7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		785893742874CEE8008BE3E5 /* TimeModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModelData.swift; sourceTree = "<group>"; };
+		785893762874CF38008BE3E5 /* PrayerTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTime.swift; sourceTree = "<group>"; };
+		7886507528525F0C0069D776 /* ApiByCoordinatesWeekdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiByCoordinatesWeekdays.swift; sourceTree = "<group>"; };
+		7886507F28553C250069D776 /* WeeklyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeeklyCustomCell.xib; sourceTree = "<group>"; };
+		7886508028553CA70069D776 /* WeeklyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCustomCell.swift; sourceTree = "<group>"; };
+		78865093285669E50069D776 /* FinalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalTableViewController.swift; sourceTree = "<group>"; };
+		788650D42858D0990069D776 /* ApiByCoordinatesShabat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiByCoordinatesShabat.swift; sourceTree = "<group>"; };
+		788DDC7028BD3E2300796631 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ALTIDAG_Notifications_4th/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		788DDC7228BD3E5800796631 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ALTIDAG_Notifications_4th/SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
+		788DDC7428BD3E7300796631 /* WeeklySearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeeklySearchVC.swift; path = ALTIDAG_Notifications_4th/WeeklySearchVC.swift; sourceTree = SOURCE_ROOT; };
+		788DDC7628BD3E9700796631 /* TimeModelWeekdays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeModelWeekdays.swift; path = ALTIDAG_Notifications_4th/TimeModelWeekdays.swift; sourceTree = SOURCE_ROOT; };
+		788DDC7728BD3E9700796631 /* TimesDataWeekDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimesDataWeekDays.swift; path = ALTIDAG_Notifications_4th/TimesDataWeekDays.swift; sourceTree = SOURCE_ROOT; };
+		788DDC7A28BD3EB300796631 /* SchedualeUserTimeTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SchedualeUserTimeTableVC.swift; path = ALTIDAG_Notifications_4th/SchedualeUserTimeTableVC.swift; sourceTree = SOURCE_ROOT; };
+		788DDC7C28BD3EC600796631 /* KeysDatesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeysDatesModel.swift; path = ALTIDAG_Notifications_4th/KeysDatesModel.swift; sourceTree = SOURCE_ROOT; };
+		788DDC7E28BD3EE800796631 /* FinalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FinalTableViewCell.xib; path = ALTIDAG_Notifications_4th/FinalTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		788DDC7F28BD3EE800796631 /* FinalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FinalTableViewCell.swift; path = ALTIDAG_Notifications_4th/FinalTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		788DDC8228BD3FA600796631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78A0966B284E958E004C1F3C /* ALTIDAG_Notifications_4th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALTIDAG_Notifications_4th.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A09672284E958E004C1F3C /* LocationSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchVC.swift; sourceTree = "<group>"; };
+		78A09684284FB7C2004C1F3C /* WeekOrShabatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekOrShabatVC.swift; sourceTree = "<group>"; };
+		78A09691284FC7B5004C1F3C /* TimesDataShabat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesDataShabat.swift; sourceTree = "<group>"; };
+		78A09693284FC7DC004C1F3C /* TimeModelShabat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModelShabat.swift; sourceTree = "<group>"; };
+		78B393F02877624C008719D5 /* CoolCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolCode.swift; sourceTree = "<group>"; };
+		78BDEA5528809E9D00460140 /* ShabatCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShabatCustomCell.xib; sourceTree = "<group>"; };
+		78BDEA5628809E9D00460140 /* ShabatCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShabatCustomCell.swift; sourceTree = "<group>"; };
+		78BDEA5728809E9D00460140 /* ShabatTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShabatTableVC.swift; sourceTree = "<group>"; };
+		78D0F08828BD4A1400F51FA7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ALTIDAG_Notifications_4th/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		78D0F08928BD4A1400F51FA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ALTIDAG_Notifications_4th/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		78D0F08C28BD4A8600F51FA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78A09668284E958E004C1F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		785893732874CE8C008BE3E5 /* Model Data */ = {
+			isa = PBXGroup;
+			children = (
+				785893762874CF38008BE3E5 /* PrayerTime.swift */,
+				785893742874CEE8008BE3E5 /* TimeModelData.swift */,
+			);
+			path = "Model Data";
+			sourceTree = "<group>";
+		};
+		7877EA8E2889B5CE00959735 /* ModelScheduleTime */ = {
+			isa = PBXGroup;
+			children = (
+				788DDC7C28BD3EC600796631 /* KeysDatesModel.swift */,
+			);
+			path = ModelScheduleTime;
+			sourceTree = "<group>";
+		};
+		7886507428525E870069D776 /* Model Week days */ = {
+			isa = PBXGroup;
+			children = (
+				7886507528525F0C0069D776 /* ApiByCoordinatesWeekdays.swift */,
+				788DDC7728BD3E9700796631 /* TimesDataWeekDays.swift */,
+				788DDC7628BD3E9700796631 /* TimeModelWeekdays.swift */,
+			);
+			path = "Model Week days";
+			sourceTree = "<group>";
+		};
+		7886508328563F2B0069D776 /* View Final Screen */ = {
+			isa = PBXGroup;
+			children = (
+				788DDC7F28BD3EE800796631 /* FinalTableViewCell.swift */,
+				788DDC7E28BD3EE800796631 /* FinalTableViewCell.xib */,
+				78865093285669E50069D776 /* FinalTableViewController.swift */,
+			);
+			path = "View Final Screen";
+			sourceTree = "<group>";
+		};
+		78A09662284E958E004C1F3C = {
+			isa = PBXGroup;
+			children = (
+				78A0966D284E958E004C1F3C /* ALTIDAG_Notifications_4th */,
+				78A0966C284E958E004C1F3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78A0966C284E958E004C1F3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78A0966B284E958E004C1F3C /* ALTIDAG_Notifications_4th.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78A0966D284E958E004C1F3C /* ALTIDAG_Notifications_4th */ = {
+			isa = PBXGroup;
+			children = (
+				78A09682284FB725004C1F3C /* Locationsearch */,
+				7886507428525E870069D776 /* Model Week days */,
+				78A0968C284FC72B004C1F3C /* Model Shabat */,
+				78D0F08C28BD4A8600F51FA7 /* Info.plist */,
+				78A09683284FB786004C1F3C /* View */,
+				7877EA8E2889B5CE00959735 /* ModelScheduleTime */,
+				785893732874CE8C008BE3E5 /* Model Data */,
+				7886508328563F2B0069D776 /* View Final Screen */,
+				78B393F02877624C008719D5 /* CoolCode.swift */,
+			);
+			path = ALTIDAG_Notifications_4th;
+			sourceTree = "<group>";
+		};
+		78A09682284FB725004C1F3C /* Locationsearch */ = {
+			isa = PBXGroup;
+			children = (
+				78D0F08928BD4A1400F51FA7 /* LaunchScreen.storyboard */,
+				788DDC8228BD3FA600796631 /* Assets.xcassets */,
+				78D0F08828BD4A1400F51FA7 /* Main.storyboard */,
+				788DDC7028BD3E2300796631 /* AppDelegate.swift */,
+				788DDC7228BD3E5800796631 /* SceneDelegate.swift */,
+				788DDC7428BD3E7300796631 /* WeeklySearchVC.swift */,
+				78A09672284E958E004C1F3C /* LocationSearchVC.swift */,
+			);
+			path = Locationsearch;
+			sourceTree = "<group>";
+		};
+		78A09683284FB786004C1F3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78BDEA5628809E9D00460140 /* ShabatCustomCell.swift */,
+				78BDEA5528809E9D00460140 /* ShabatCustomCell.xib */,
+				78BDEA5728809E9D00460140 /* ShabatTableVC.swift */,
+				78A09684284FB7C2004C1F3C /* WeekOrShabatVC.swift */,
+				7886507F28553C250069D776 /* WeeklyCustomCell.xib */,
+				7886508028553CA70069D776 /* WeeklyCustomCell.swift */,
+				788DDC7A28BD3EB300796631 /* SchedualeUserTimeTableVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78A0968C284FC72B004C1F3C /* Model Shabat */ = {
+			isa = PBXGroup;
+			children = (
+				788650D42858D0990069D776 /* ApiByCoordinatesShabat.swift */,
+				78A09691284FC7B5004C1F3C /* TimesDataShabat.swift */,
+				78A09693284FC7DC004C1F3C /* TimeModelShabat.swift */,
+			);
+			path = "Model Shabat";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78A0966A284E958E004C1F3C /* ALTIDAG_Notifications_4th */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A0967F284E958F004C1F3C /* Build configuration list for PBXNativeTarget "ALTIDAG_Notifications_4th" */;
+			buildPhases = (
+				78A09667284E958E004C1F3C /* Sources */,
+				78A09668284E958E004C1F3C /* Frameworks */,
+				78A09669284E958E004C1F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ALTIDAG_Notifications_4th;
+			productName = ALTIDAG_Notifications_1st;
+			productReference = 78A0966B284E958E004C1F3C /* ALTIDAG_Notifications_4th.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78A09663284E958E004C1F3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					78A0966A284E958E004C1F3C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 78A09666284E958E004C1F3C /* Build configuration list for PBXProject "ALTIDAG_Notifications_4th" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78A09662284E958E004C1F3C;
+			productRefGroup = 78A0966C284E958E004C1F3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78A0966A284E958E004C1F3C /* ALTIDAG_Notifications_4th */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78A09669284E958E004C1F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D0F08B28BD4A1400F51FA7 /* LaunchScreen.storyboard in Resources */,
+				78BDEA5828809E9D00460140 /* ShabatCustomCell.xib in Resources */,
+				78865082285547BB0069D776 /* WeeklyCustomCell.xib in Resources */,
+				78D0F08A28BD4A1400F51FA7 /* Main.storyboard in Resources */,
+				788DDC8328BD3FA600796631 /* Assets.xcassets in Resources */,
+				788DDC8028BD3EE800796631 /* FinalTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78A09667284E958E004C1F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788DDC7B28BD3EB300796631 /* SchedualeUserTimeTableVC.swift in Sources */,
+				788DDC7128BD3E2300796631 /* AppDelegate.swift in Sources */,
+				78865094285669E50069D776 /* FinalTableViewController.swift in Sources */,
+				78B393F12877624C008719D5 /* CoolCode.swift in Sources */,
+				788650D52858D0990069D776 /* ApiByCoordinatesShabat.swift in Sources */,
+				78A09685284FB7C2004C1F3C /* WeekOrShabatVC.swift in Sources */,
+				7886508128553CA70069D776 /* WeeklyCustomCell.swift in Sources */,
+				788DDC8128BD3EE800796631 /* FinalTableViewCell.swift in Sources */,
+				788DDC7528BD3E7300796631 /* WeeklySearchVC.swift in Sources */,
+				788DDC7328BD3E5800796631 /* SceneDelegate.swift in Sources */,
+				785893752874CEE8008BE3E5 /* TimeModelData.swift in Sources */,
+				788DDC7828BD3E9700796631 /* TimeModelWeekdays.swift in Sources */,
+				7886507628525F0C0069D776 /* ApiByCoordinatesWeekdays.swift in Sources */,
+				78A09694284FC7DC004C1F3C /* TimeModelShabat.swift in Sources */,
+				78A09673284E958E004C1F3C /* LocationSearchVC.swift in Sources */,
+				78BDEA5A28809E9D00460140 /* ShabatTableVC.swift in Sources */,
+				78BDEA5928809E9D00460140 /* ShabatCustomCell.swift in Sources */,
+				785893772874CF38008BE3E5 /* PrayerTime.swift in Sources */,
+				788DDC7D28BD3EC600796631 /* KeysDatesModel.swift in Sources */,
+				78A09692284FC7B5004C1F3C /* TimesDataShabat.swift in Sources */,
+				788DDC7928BD3E9700796631 /* TimesDataWeekDays.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		78A0967D284E958F004C1F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ALTIDAG_Notifications_4th/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = ALTIDAG_Notifications_4th/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78A0967E284E958F004C1F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ALTIDAG_Notifications_4th/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = ALTIDAG_Notifications_4th/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78A09680284E958F004C1F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G33VZW6BL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duanination.ALTIDAG-Notifications-4th";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78A09681284E958F004C1F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G33VZW6BL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duanination.ALTIDAG-Notifications-4th";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78A09666284E958E004C1F3C /* Build configuration list for PBXProject "ALTIDAG_Notifications_4th" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A0967D284E958F004C1F3C /* Debug */,
+				78A0967E284E958F004C1F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A0967F284E958F004C1F3C /* Build configuration list for PBXNativeTarget "ALTIDAG_Notifications_4th" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A09680284E958F004C1F3C /* Debug */,
+				78A09681284E958F004C1F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78A09663284E958E004C1F3C /* Project object */;
+}
